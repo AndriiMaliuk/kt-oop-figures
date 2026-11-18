@@ -5,13 +5,14 @@ import mate.academy.model.figure.Figure
 
 const val VALUE_IT = 2.0
 class IsoscelesTrapezoid(color: Color,
-                         private val sideA: Double,
-                         private val sideB: Double,
+                         private val firstLeg: Double,
+                         private val secondLeg: Double,
                          private val height: Double): Figure(color)  {
-    override fun area() = ((sideA + sideB) / VALUE_IT) * height
+    override fun area() = ((firstLeg + secondLeg) / VALUE_IT) * height
 
     override fun draw() {
         println("Figure: isoscelesTrapezoid, area: ${area()} sq. units," +
-                " sideA: $sideA units, sideB: $sideB units, height: $height units, color: $color")
+                " firstLeg: $firstLeg units, secondLeg: $secondLeg units," +
+                " height: $height units, color: $color")
     }
 }

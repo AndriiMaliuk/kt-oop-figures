@@ -6,5 +6,5 @@ fun main() {
     val sup = FigureSupplier()
     val figureArray = arrayOf(sup.getRandomFigure(),
         sup.getRandomFigure(), sup.getDefaultFigure(), sup.getDefaultFigure())
-    figureArray.forEach { figure -> println(figure.draw()) }
+    figureArray.forEach { figure -> figure.draw() }
 }
