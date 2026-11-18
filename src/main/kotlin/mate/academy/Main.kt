@@ -1,5 +1,9 @@
 package mate.academy
 
+import mate.academy.service.FigureSupplier
+
 fun main() {
-    // draw all figures here
+    val sup = FigureSupplier()
+    sup.getRandomFigure().drow()
+    sup.getDefaultFigure().drow()
 }
