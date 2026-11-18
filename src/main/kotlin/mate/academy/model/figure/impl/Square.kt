@@ -4,9 +4,10 @@ import mate.academy.model.Color
 import mate.academy.model.figure.Figure
 
 class Square(color: Color, private val side: Double): Figure(color) {
+    override fun area() = side * side
 
-    override fun drow() {
-        println("Figure: square, area: ${side * side} sq. units," +
+    override fun draw() {
+        println("Figure: square, area: ${area()} sq. units," +
                 " side: $side units, color: $color")
     }
 }

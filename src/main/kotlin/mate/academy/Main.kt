@@ -4,6 +4,7 @@ import mate.academy.service.FigureSupplier
 
 fun main() {
     val sup = FigureSupplier()
-    sup.getRandomFigure().drow()
-    sup.getDefaultFigure().drow()
+    val figureArray = arrayOf(sup.getRandomFigure(),
+        sup.getRandomFigure(), sup.getDefaultFigure(), sup.getDefaultFigure())
+    figureArray.forEach { figure -> println(figure.draw()) }
 }

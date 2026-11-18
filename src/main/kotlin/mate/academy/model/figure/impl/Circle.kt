@@ -6,8 +6,10 @@ import kotlin.math.PI
 import kotlin.math.pow
 
 class Circle(color: Color, private val radius: Double): Figure(color) {
-    override fun drow() {
-        println("Figure: circle, area: ${PI * radius.pow(2)} sq. units," +
+    override fun area() = PI * radius.pow(2)
+
+    override fun draw() {
+        println("Figure: circle, area: ${area()} sq. units," +
                 " radius: $radius units, color: $color")
     }
 }

@@ -8,9 +8,10 @@ class IsoscelesTrapezoid(color: Color,
                          private val sideA: Double,
                          private val sideB: Double,
                          private val height: Double): Figure(color)  {
-    override fun drow() {
-        println("Figure: isoscelesTrapezoid, area: ${((sideA + sideB) / VALUE_IT) * height}" +
-                " sq. units, sideA: $sideA units, sideB: $sideB units, height: $height units," +
-                " color: $color")
+    override fun area() = ((sideA + sideB) / VALUE_IT) * height
+
+    override fun draw() {
+        println("Figure: isoscelesTrapezoid, area: ${area()} sq. units," +
+                " sideA: $sideA units, sideB: $sideB units, height: $height units, color: $color")
     }
 }
